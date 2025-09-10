@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-///Time Audit
+CALSCALE:GEORGIAN
+BEGIN:VEVENT
+DESCRIPTION:Google Chrome - Gmail - Inbox - jeffreyxfan@gmail.com - 10.82 minutes\nGoogle Chrome - v - 1 seconds\nghostty - v - 3 seconds
+DURATION:PT15M
+DTSTART:20250910T094500Z
+SUMMARY:Time Audit
+UID:cec44d5a-cb7f-434a-bb6b-4bae1428dec7@cec4.org
+URL:http://127.0.0.1:8000/time_audit.ics
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:ghostty - v - 9 seconds\nCalendar -  - 1.33 minutes\nCalendar - Calendar: Import - 2 seconds\nCalendar - General - 2 seconds\nCalendar - Accounts - 15 seconds\nSystem Settings - Internet Accounts - 3 seconds\nGoogle Chrome - Google Gemini - 1 seconds\nGoogle Chrome - - Google Chrome - 1 seconds\nGoogle Chrome -  - 6 seconds\nGoogle Chrome - Google Search - ical subscribe to server calendar - 8 seconds\nGoogle Chrome - Google Search - truncate string to 10 characters python - 1.28 minutes\nGoogle Chrome - Gmail - Inbox - jeffreyxfan@gmail.com - 3.67 minutes
+DURATION:PT15M
+DTSTART:20250910T093000Z
+SUMMARY:Time Audit
+UID:4c0d3381-5697-4d92-8bf5-49f6b38c5e8a@4c0d.org
+URL:http://127.0.0.1:8000/time_audit.ics
+END:VEVENT
+END:VCALENDAR
