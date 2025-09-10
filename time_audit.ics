@@ -3,6 +3,30 @@ VERSION:2.0
 PRODID:-///Time Audit
 CALSCALE:GEORGIAN
 BEGIN:VEVENT
+DESCRIPTION:ghostty - v - 9 seconds\nCalendar -  - 1.33 minutes\nCalendar - Calendar: Import - 2 seconds\nCalendar - General - 2 seconds\nCalendar - Accounts - 15 seconds\nSystem Settings - Internet Accounts - 3 seconds\nGoogle Chrome - Google Gemini - 1 seconds\nGoogle Chrome - - Google Chrome - 1 seconds\nGoogle Chrome -  - 6 seconds\nGoogle Chrome - Google Search - ical subscribe to server calendar - 8 seconds\nGoogle Chrome - Google Search - truncate string to 10 characters python - 1.28 minutes\nGoogle Chrome - Gmail - Inbox - jeffreyxfan@gmail.com - 3.67 minutes
+DURATION:PT15M
+DTSTART:20250910T093000Z
+SUMMARY:Time Audit
+UID:4c0d3381-5697-4d92-8bf5-49f6b38c5e8a@4c0d.org
+URL:http://127.0.0.1:8000/time_audit.ics
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Google Chrome - $32M Exit: Left the U.S.\, Built a $15K/Month Life in Japan - YouTube - 4.60 minutes\nghostty - v - 5.42 minutes\nghostty - $32M Exit: Left the U.S.\, Built a $15K/Month Life in Japan - Google Chrome - YouTube - 1 seconds\nCalendar -  - 13 seconds\nCalendar - v - 1 seconds\nNumbers - activity_log 2 - 3 seconds\nNumbers - activity_log - 34 seconds\nFinder - timetracker - 3 seconds
+DURATION:PT15M
+DTSTART:20250910T141500Z
+SUMMARY:Time Audit
+UID:09e12f9e-a1b6-441f-9165-40a941a93ada@09e1.org
+URL:http://127.0.0.1:8000/time_audit.ics
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:ghostty - v - 1.80 minutes\nghostty - Google Chrome - Google Gemini - 1 seconds\nGoogle Chrome - Google Gemini - 34 seconds\nGoogle Chrome - v - 3 seconds\nGoogle Chrome - - Google Chrome - 2 seconds\nGoogle Chrome -  - 4 seconds\nGoogle Chrome - Google Search - vim find function - 18 seconds\nGoogle Chrome - Google Search - hobonichi - 5 seconds\nGoogle Chrome - Hobonichi Techo - 1 seconds\nGoogle Chrome - Sign in to reddit.com with google.com - 56 seconds\nGoogle Chrome - YouTube - 42 seconds\nGoogle Chrome - YouTube - iPhone 17/Pro/Air Impressions: Spot the Red Flags! - 9 seconds\nCalendar -  - 16 seconds
+DURATION:PT15M
+DTSTART:20250910T134500Z
+SUMMARY:Time Audit
+UID:ec7db5fa-8e4e-4657-b8c8-b6def59631f8@ec7d.org
+URL:http://127.0.0.1:8000/time_audit.ics
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Google Chrome - Gmail - Inbox - jeffreyxfan@gmail.com - 10.82 minutes\nGoogle Chrome - v - 1 seconds\nghostty - v - 3 seconds
 DURATION:PT15M
 DTSTART:20250910T094500Z
@@ -11,11 +35,27 @@ UID:cec44d5a-cb7f-434a-bb6b-4bae1428dec7@cec4.org
 URL:http://127.0.0.1:8000/time_audit.ics
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:ghostty - v - 9 seconds\nCalendar -  - 1.33 minutes\nCalendar - Calendar: Import - 2 seconds\nCalendar - General - 2 seconds\nCalendar - Accounts - 15 seconds\nSystem Settings - Internet Accounts - 3 seconds\nGoogle Chrome - Google Gemini - 1 seconds\nGoogle Chrome - - Google Chrome - 1 seconds\nGoogle Chrome -  - 6 seconds\nGoogle Chrome - Google Search - ical subscribe to server calendar - 8 seconds\nGoogle Chrome - Google Search - truncate string to 10 characters python - 1.28 minutes\nGoogle Chrome - Gmail - Inbox - jeffreyxfan@gmail.com - 3.67 minutes
+DESCRIPTION:Google Chrome - YouTube - iPhone 17/Pro/Air Impressions: Spot the Red Flags! - 8.93 minutes\nGoogle Chrome - YouTube - 8 seconds\nGoogle Chrome - $32M Exit: Left the U.S.\, Built a $15K/Month Life in Japan - YouTube - 36 seconds\nCalendar -  - 58 seconds\nCalendar - Google Chrome - YouTube - iPhone 17/Pro/Air Impressions: Spot the Red Flags! - 1 seconds\nghostty - v - 10 seconds
 DURATION:PT15M
-DTSTART:20250910T093000Z
+DTSTART:20250910T140000Z
 SUMMARY:Time Audit
-UID:4c0d3381-5697-4d92-8bf5-49f6b38c5e8a@4c0d.org
+UID:ff07c2da-bf61-400f-ac2b-b8b25f842161@ff07.org
+URL:http://127.0.0.1:8000/time_audit.ics
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Google Chrome - Google Gemini - 1.92 minutes\nGoogle Chrome - $32M Exit: Left the U.S.\, Built a $15K/Month Life in Japan - YouTube - 1.77 minutes\nGoogle Chrome -  - 8 seconds\nghostty - v - 7 seconds\nGoogle Chrome - YouTube - 2 seconds
+DURATION:PT15M
+DTSTART:20250910T143000Z
+SUMMARY:Google Chrome - G...
+UID:4c37bb49-2289-4718-b87a-8836cfb70f17@4c37.org
+URL:http://127.0.0.1:8000/time_audit.ics
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:ghostty - v - 4.73 minutes\nGoogle Chrome - $32M Exit: Left the U.S.\, Built a $15K/Month Life in Japan - YouTube - 1.10 minutes\nGoogle Chrome - Google Gemini - 2 seconds\nGoogle Chrome -  - 2 seconds\nGoogle Chrome - Ics.py : iCalendar for Humans — ics.py 0.7.2 documentation - 2 seconds
+DURATION:PT15M
+DTSTART:20250910T144500Z
+SUMMARY:v - ghostty
+UID:0e183ae1-42f8-404b-b7a5-35185b8683bc@0e18.org
 URL:http://127.0.0.1:8000/time_audit.ics
 END:VEVENT
 END:VCALENDAR

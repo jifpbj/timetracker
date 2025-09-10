@@ -88,25 +88,47 @@ async def summarize_data():
         # The timestamp now reflects the start of the 15-minute block that just finished
         timestamp = (datetime.now() - timedelta(minutes=15)).strftime("%Y-%m-%d %H:%M")
         
-        summary_list = []
         # Check if any activity was recorded in the last 15 minutes
         if not dictionary:
             activity_summary_string = "No activity recorded"
+            ics_event_title = "Idle"
         else:
+            # Create a list of all activity items to sort
+            all_activity = []
             for app, titles in dictionary.items():
                 if isinstance(titles, dict):
                     for title, count in titles.items():
-                        summary_list.append(f"{app} - {title} - {format_time(count)}")
+                        all_activity.append({'app': app, 'title': title, 'count': count})
                 else:
-                    summary_list.append(f"{app} - No title recorded - {format_time(titles)}")
+                    all_activity.append({'app': app, 'title': "No title recorded", 'count': titles})
+            
+            # Sort the activity list by count in descending order
+            sorted_activity = sorted(all_activity, key=lambda item: item['count'], reverse=True)
+            
+            # Construct the summary string from the sorted list
+            summary_list = []
+            for item in sorted_activity:
+                summary_list.append(f"{item['app']} - {item['title']} - {format_time(item['count'])}")
             activity_summary_string = "\n".join(summary_list)
+            
+            # Get the most active item for the ICS title
+            most_active_item = sorted_activity[0]
+            app = most_active_item['app']
+            title = most_active_item['title']
+            
+            # Format the title to be concise
+            full_title = f"{title} - {app}"
+            if len(full_title) > 32:
+                ics_event_title = full_title[:30] + "..."
+            else:
+                ics_event_title = full_title
 
         print(f"--- Writing data to CSV at {timestamp} ---")
         write_to_csv(timestamp, activity_summary_string)
         print("--- CSV file updated ---")
         
         print(f"--- Writing data to ICS at {timestamp} ---")
-        write_to_ics(timestamp, activity_summary_string)
+        write_to_ics(timestamp, activity_summary_string, ics_event_title)
         print("--- ICS file updated ---")
         
         # You can optionally print a summary to the console as well
@@ -137,7 +159,7 @@ def write_to_csv(timestamp, activity_summary_string):
             'activity_summary': activity_summary_string
         })
 
-def write_to_ics(timestamp, activity_summary_string):
+def write_to_ics(timestamp, activity_summary_string, event_title):
     """
     Writes a new calendar event to an .ics file with the activity summary.
     The file can be uploaded to a public server to create a shareable URL.
@@ -155,7 +177,7 @@ def write_to_ics(timestamp, activity_summary_string):
         c = Calendar(creator='-///Time Audit')
 
     e = Event()
-    e.name = "Time Audit"
+    e.name = event_title
     e.begin = datetime.strptime(timestamp, "%Y-%m-%d %H:%M")
     e.duration = {'minutes': 15}
     e.description = activity_summary_string
@@ -241,3 +263,4 @@ def get_active_application_name():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
