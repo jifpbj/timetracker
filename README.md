@@ -4,6 +4,8 @@ A custom time tracker
 
 Personal project to track time spent on various tasks and projects.
 
+I developed a Python-based CLI tool to automate the granular tracking of my creative and technical workflows. The application functions as a background service that intelligently scrapes active window titles at high-frequency intervals to categorize real-time activity. To provide actionable insights, I engineered a data-processing layer that aggregates this raw data every 15 minutes, pushing a summarized 'time-spent' report to a calendar API via a custom integration. This project replaced manual logging with an automated, data-driven system, allowing me to audit my productivity and balance project milestones with surgical precision."
+
 ## Installation
 
 Dependencies: requires Python 3.x and the `icalendar` library:
